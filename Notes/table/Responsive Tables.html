@@ -1,0 +1,201 @@
+<!-- Responsive Tables 📱 with Scroll on Small Screens -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>15. Responsive Tables 📱</title>
+  <style>
+    
+    body { 
+        background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+        font-size: 20;
+        padding: 5px;
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        border: 2px indigo groove;
+       
+    }
+     div{
+                height: auto;
+                width: 90%;
+        
+                border-radius: 20px;
+                padding: 25px; 
+                margin:0px 45px;
+                border: white;
+                 background-color: rgb(248, 216, 216); 
+                 border-left: 5px solid #1b051f;
+                border-right: 5px solid #240829;
+            }
+
+    h1 {
+      color: #00695c;
+    }
+
+    table {
+      width: 1000px; /* Purposefully wide to require horizontal scroll on mobile */
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ccc;
+    }
+
+    /* Optional: Highlight row on hover */
+    tr:hover {
+      background-color: #e0f7fa;
+    }
+
+    .scroll-container {
+      overflow-x: auto;
+      border: 2px dashed #009688;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .note, .output, .practice {
+      background-color: #e8f5e9;
+      border-left: 5px solid #4caf50;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    code {
+      background-color: #f1f1f1;
+      padding: 3px 6px;
+      border-radius: 3px;
+      font-size: 15px;
+    }
+
+    table.practice-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .practice-table th, .practice-table td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .practice-table th {
+      background-color: #c8e6c9;
+    }
+  </style>
+</head>
+<body>
+    <div>
+  <h1> 15. Responsive Tables </h1>
+  <hr>
+
+  <h2>🔹 Problem:</h2>
+  <p>
+    Tables with many columns can overflow the screen on smaller devices (like smartphones), 
+    making content hidden or breaking the layout.
+  </p>
+
+  <h2> Solution:</h2>
+  <p>
+    Wrap the <code>&lt;table&gt;</code> inside a <code>&lt;div&gt;</code> with <code>overflow-x: auto;</code> like this:
+  </p>
+  <pre><code>&lt;div style="overflow-x:auto;"&gt;
+  &lt;table&gt;
+    &lt;!-- table content --&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+  <h2> Full Example:</h2>
+
+  <div class="scroll-container">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Supplier</th>
+        <th>Location</th>
+        <th>Category</th>
+        <th>Warranty</th>
+        <th>Delivery Time</th>
+      </tr>
+      <tr>
+        <td>Monitor</td>
+        <td>$120</td>
+        <td>30</td>
+        <td>ABC Ltd</td>
+        <td>Warehouse A</td>
+        <td>Electronics</td>
+        <td>1 Year</td>
+        <td>3 Days</td>
+      </tr>
+      <tr>
+        <td>Keyboard</td>
+        <td>$20</td>
+        <td>150</td>
+        <td>XYZ Co</td>
+        <td>Warehouse B</td>
+        <td>Accessories</td>
+        <td>6 Months</td>
+        <td>2 Days</td>
+      </tr>
+      
+    </table>
+  </div>
+
+  <h2> How It Works:</h2>
+  <div class="output">
+    <ul>
+      <li>✅ On smaller screens (like mobile phones), a horizontal scrollbar appears.</li>
+      <li>✅ Users can scroll sideways to view the full table without breaking the layout.</li>
+      <li>✅ No columns are cut off or hidden behind the screen edge.</li>
+    </ul>
+  </div>
+
+  <h2>✅ Best Practices for Responsive Tables:</h2>
+  <div class="practice">
+    <table class="practice-table">
+      <tr>
+        <th>Technique</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>overflow-x: auto</code></td>
+        <td>Simple, flexible way to make tables scrollable horizontally.</td>
+      </tr>
+      <tr>
+        <td><code>min-width</code> on table</td>
+        <td>Ensures table does not squish too much on small screens.</td>
+      </tr>
+      <tr>
+        <td>Avoid fixed cell widths</td>
+        <td>Allows content to auto-adjust and flow properly.</td>
+      </tr>
+      <tr>
+        <td>Media queries</td>
+        <td>Can hide less important columns on small screens using <code>@media</code>.</td>
+      </tr>
+    </table>
+  </div><hr>
+    <p>
+        <button>
+            <a href="index.html">Back to Main Page</a>
+        </button>
+    </p>
+</div>
+</body>
+</html>
+<!--
+
+### ✅ Summary of Concept
+
+| Item               | Description                                                   |
+| ------------------ | ------------------------------------------------------------- |
+| **Topic**          | Responsive Tables                                             |
+| **Problem**        | Table overflows on small/mobile screens                       |
+| **CSS Fix**        | Wrap table in `<div style="overflow-x:auto;">`                |
+| **Output**         | Horizontal scroll appears                                     |
+| **Best Practices** | Use `min-width`, avoid fixed widths, media queries for hiding |
+
+-->

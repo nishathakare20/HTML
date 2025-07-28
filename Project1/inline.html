@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inline CSS</title>
+    </head>
+    <body style="background: linear-gradient(to left, rgb(188, 233, 245),rgb(243, 242, 203));">
+        <div style="border: 2px groove black;padding: 12px;height: 1100px;">
+        <h1 style=" text-align: center;"><u>INLINE CSS</u></h1>
+        <hr>
+        <div>
+        <h2>
+            Defination:Inline CSS is written <span style="color: blue;">directly inside an HTML element</span> using the <span style="color: blue;">style</span> attribute. allowing for quick, unique styling without external stylesheets.</h2>
+        </div>
+            <hr>
+            <h3>Purpose:</h3>
+        <ul style="font-size: 20;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">
+            <li><span style="color: blue;"> Quick Application:</span> Ideal for rapid, one-off style adjustments.</li>
+            <li><span style="color: blue;"> High Specificity:</span>  Overrides other CSS rules due to its specificity.</li>
+            <li><span style="color: blue;"> Limited Reusability: </span> Not suitable for applying the same styles to multiple elements.</li>
+            <li><span style="color: blue;"> Inline Styling: </span> The style attribute within the &lt;p&gt;tag applies CSS directly to the paragraph, setting the text color to blue and font size to 18 pixels.</li>
+            <li><span style="color: blue;"> Immediate Effect: </span> This method allows for quick, element-specific styling without the need for external or internal CSS.</li>
+            </ul>
+        <hr>
+        <h3>when to use inline CSS</h3>
+        <ul style="font-size: 20;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">
+            <li><span style="color: blue;">Applying Unique Styles:</span> Ideal for styling individual elements without affecting global styles.</li>
+            <li><span style="color: blue;">Testing or Debugging:</span> Useful for quick style adjustments during development</li>
+            <li><span style="color: blue;">Email Templates:</span> Ensures consistent styling across various email clients.</li>
+            <li><span style="color: blue;">Dynamic Styling with JavaScript:</span> Allows for programmatically changing styles based on user interactions.</li>
+        </ul><hr>
+        <h3>Syntax:</h3>
+        <p style="font-size: 20;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">&lt;tagname style="property: value;"&gt; Content &lt;/tagname&gt;</p><hr>
+        <h3>Example:</h3>
+        <p style="font-size: 20;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">&lt;p style="color: blue; font-size: 16px;"&gt;This is inline styled text.&lt;/p&gt;</p><hr>
+        <h3>Advantages of Inline CSS:</h3>
+        <ul style="font-size: 20;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">
+            <li>Using style attributes we can provide styles directly to our HTML elements.</li>
+            <li>Inline CSS Overrides external and internal styles with higher specificity.</li>
+            <li>No need to create and upload a separate document as in the external style.</li>
+            <li>Inline styles have high specificity, allowing precise control over individual elements.</li>
+            <li>Enables dynamic style changes using JavaScript or server-side logic.</li>
+            <li>Inline styles don't require separate CSS files, potentially reducing HTTP requests.</li>
+        </ul>
+        <hr>
+        <h3>Disadvantages of Inline CSS:</h3>
+        <ul style="font-size: 20;font-family: Arial, Helvetica, sans-serif;font-weight: bold;">
+            <li>Adding style attributes to every HTML element is time-consuming.</li>
+            <li>Styling multiple elements can increase your page's size and download time, impacting overall page performance.</li>
+            <li>Reduced separation of concerns between HTML structure and CSS.</li>
+            <li>Inline styles cannot be used to style pseudo-elements and pseudo-classes.</li>
+            <li>It can be difficult to maintain consistency and make global style updates.</li>
+        </ul>
+        <hr>
+        <table style="width: 60%; margin: 10px auto;">
+            <tr>
+                <th>
+                    <a href="index.html">
+                        <img src="home.png" alt="Home Icon" title="Visit : Index CSS Page" style=" height: 60px; width: 60px;">
+                    </a>
+                </th>
+                <th>
+                    <a href="internal.html">
+                        <img src="next.png" alt="Next Icon" title="Visit : Internal CSS page" style="height: 60px; width: 60px;" >
+                    </a>
+                </th>
+                
+            </tr>
+        </table>
+
+
+        </div>
+    </body>
+</html>

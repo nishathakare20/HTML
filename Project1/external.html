@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>External CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <div>
+        <h1><u>EXTERNAL CSS</u></h1><hr>
+        <h2>Definition: External CSS is written in a separate <span>.css file</span>, and linked to the HTML using the <span> &lt;link&gt;</span> tag inside the<span> &lt;head&gt;</span> section. With an external style sheet, you can change the look of an entire website by changing just one file!</h2><hr>
+        <h3>Syntax:</h3>
+        <pre> selectors {
+                attributes:property value;
+              }
+        </pre><hr>
+        <h3>Example: <ul>
+            <li>CSS file:</li>
+        </ul></h3>
+        <pre> body {
+                background-color: lightblue;
+              }
+              h1 {
+                color: navy;
+                margin-left: 20px;
+              }
+        </pre><h3>
+        <ul>
+            <li>HTML File:</li>
+        </ul></h3>
+        <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+            &lt;head&gt;
+                &lt;link rel="stylesheet" href="style.css"&gt;
+            &lt;/head&gt;
+             &lt;body&gt;
+                &lt;h1&gt;This is styled via External CSS&lt;/h1&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+        </pre><hr>
+        <h3>Advantages of External CSS:</h3>
+        <ul>
+            <li><span>Improved Maintainability:</span> Having styles in a separate file makes it easier to manage and update your styles without modifying each HTML document.</li>
+            <li><span>Enhanced Reusability:</span> The same CSS file can be linked to multiple HTML files, promoting   consistent design across your site.</li>
+            <li><span>Efficient Caching:</span> Browsers cache external CSS files, leading to faster page load times on subsequent visits.</li>
+        </ul><hr>
+        <h3>Disadvantages of External CSS:</h3> 
+        <ul>
+            <li><span>Loading Time:</span> Pages may not render correctly until the external CSS file is fully loaded, potentially causing a flash of unstyled content (FOUC).</li>
+            <li><span>Performance Concerns:</span> Linking multiple CSS files can increase download times, affecting overall site performance.</li>
+            <li><span>Versioning and Caching Challenges:</span> Large-scale projects may encounter difficulties in versioning and caching, leading to inconsistencies in styles</li>
+        </ul>
+        <hr>
+        <h3 style="text-align: center;">Difference between Inline ,Internal,External CSS</h3>
+            <table style="border: 2px outset lightcoral; width: 100%;margin: auto;height: 15%;">
+                <tr>
+                    <th style="border: 2px outset lightcoral;">SR.NO</th>
+                    <th style="border: 2px outset lightcoral;">Parameter</th>
+                    <th style="border: 2px outset lightcoral;">Inline CSS</th>
+                    <th style="border: 2px outset lightcoral;">Internal CSS</th>
+                    <th style="border: 2px outset lightcoral;">External CSS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Location</td>
+                    <td>It is used within html tag using the style attribute.</td>
+                    <td>It is used within &lt;head&gt; section of html document.</td>
+                    <td>It is used in a separate css file.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Selector Scope</td>
+                    <td>Affect a single elements or group of element.</td>
+                    <td>Affect multiple element within the same HTML element.</td>
+                    <td>Affect multiple html document or an entire website.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Section</td>
+                    <td> body</td>
+                    <td>head</td>
+                    <td>head</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Define</td>
+                    <td>style attribute</td>
+                    <td>style element</td>
+                    <td>stylesheet or file </td>
+                </tr>
+            </table><hr>
+        <table >
+            <tr>
+                <th>
+                    <a href="internal.html">
+                        <img src="previous.png" alt="Previous Icon" title="Visit : INTERNAL CSS Page">
+                    </a>
+                </th>
+                <th>
+                    <a href="index.html">
+                        <img src="home.png" alt="Home Icon" title="Visit : Index CSS page">
+                    </a>
+                </th>
+               <!-- <th>
+                    <a href="style.css">
+                        <img src="next.png" alt="Next Icon" title="Visit :  Style CSS page">
+                    </a>-->
+                </th></tr></table>
+        </div>
+
+    </body>
+</html>

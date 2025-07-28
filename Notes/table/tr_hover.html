@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>table hover</title>
+    <style>
+         body{
+                background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+                
+                margin: auto;
+                padding: 5px;
+            } 
+            div{
+                height: auto;
+                width: 90%;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 25px; 
+                margin:0px 45px;
+                border: white;
+                border-left: 5px solid #1b051f;
+                border-right: 5px solid #240829;
+            }
+            p{
+                font-weight: bold;
+
+            }
+            table, th, td 
+            {
+                border: 1px solid black;
+            
+            }
+            tr:hover{
+                background-color: #6027e6;
+            }
+            span{
+                color: blue;
+            }
+            button{
+                background-color: rgb(172, 239, 248);
+                height: 30px;
+                border-radius: 15px;
+            }
+    </style>
+    </head>
+    <body>
+        <div>
+            <h1>Table Hover</h1>
+            <p> ● <span>tr:</span> This targets all table row elements within an HTML table.<br><br>
+                ●<span>:hover</span>: This is a pseudo-class that applies styles to an element when the user's cursor is hovering over it.</p>
+            <pre><code>
+        &lt;style&gt;
+            tr:hover
+            {
+                <b>background-color:#6027e6;</b>
+            }
+        &lt;/style&gt;</code></pre><hr>
+        
+        <table  style="width: 60%;margin: auto;">
+           <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>Ishita</td>
+                <td>22</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Prasad</td>
+                <td>19</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Kalyani</td>
+                <td>32</td>
+                <td>Female</td>
+            </tr>
+        </table><hr>
+        <a href="hover.html">View More</a>
+        <hr>
+        <p>
+            <button>
+                <a href="index.html">Back to Main Page</a>
+            </button>
+        </p>
+        </div>
+    </body>
+    </html>

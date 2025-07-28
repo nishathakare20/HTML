@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Colspan
+        </title>
+        <style>
+            body{
+                background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+                
+                margin: auto;
+                padding: 5px;
+            } 
+            div{
+                height: auto;
+                width: 90%;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 25px; 
+                margin:0px 45px;
+                border: white;
+                border-left: 5px solid #1b051f;
+                border-right: 5px solid #240829;
+            }
+            p{
+                font-weight: bold;
+
+            }
+            table, th, td 
+            {
+                border: 1px solid black;
+                width: 50%;
+                margin:auto;
+            
+            }
+            h1{
+                text-align: center;
+            }
+            span{
+                color: blue;
+            }
+            button{
+                background-color: rgb(172, 239, 248);
+                height: 30px;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>HTML Table colspan Attribute</h1><hr>
+            <h3>Purpose:</h3>
+               <p>● The <span>colspan</span> attribute in the HTML is used in table headers (&lt;th&gt;) or table data cell (&lt;td&gt;) to make a cell span across multiple columns.It merges the specified number of adjacement columns into one cell.</p>
+            <h3>Syntax:</h3>
+            <pre><code>
+            &lt;td colspan="number"&gt; Cell Content&lt;td&gt;
+            </code></pre>
+            <div style="height: auto;margin-left:0px;background-color: rgb(248, 189, 229);border-radius:19px;padding: 10px;border-left: 5px solid #9c27b0;">
+            <h3>Example:</h3>
+            <table>
+                <caption>This table show how <mark>colspan="2"</mark> merges the first two columns of the first row:</caption>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>Sarika</td>
+                    <td>Shinde</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>Nashik</td>
+                </tr>
+            </table>
+            </div>
+            <h3>Output Preview:</h3>
+            <p>● The first row's "Name" cell stretches over 2 columns (merging column 1 and 2).</p>
+            <div style="height: auto;width: 90%;background-color: rgb(234, 248, 172);border-radius: 20px;margin: 20px;border-left: 5px solid #9c27b0;">
+            <h3>Notes:</h3>
+            <p>● Use <span>colspan</span> to horizontally merge cells in a table row.</p>
+            <p>● The number you provide to <span>colspan</span> must match the number of columns to span. </p>
+            <p>● Helps in designing custom headers or layout cells across multiple columns.</p>
+            <p>● You can also use <span>rowspan</span> to merge cells vertically (across rows).</p>
+            </div>
+            <p>
+            <button>
+                <a href="index.html">Back to Main Page</a>
+            </button>
+        </p>
+      
+
+
+        </div>
+    </body>
+</html>

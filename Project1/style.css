@@ -1,0 +1,37 @@
+body{
+     background: linear-gradient(to left, rgb(179, 239, 250),rgb(247, 246, 216)); 
+     font-size: 20;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: bold;
+}
+div{
+    border: 2px groove black;
+    padding: 12px;
+    height: 1490px;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+span{
+    color:blue;
+}
+h2,h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+pre{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    font-weight: bold;
+    margin:auto;
+}
+
+td{border: lightslategray 2px inset;} 
+table{
+    width: 60%;
+    margin: 10px auto;
+}          
+img{
+    height: 60px;
+    width: 60px;
+}

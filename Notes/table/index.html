@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Table Notes
+        </title>
+        <style>
+            body{
+                background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif; 
+                border: 2px indigo groove;
+                
+                margin:5px ;
+                padding: 5px;
+            } 
+            h1 {
+            
+                text-align: center;
+                background: linear-gradient(to top, rgb(162, 101, 241),rgb(20, 33, 68),rgb(110, 3, 233));
+                color: transparent;
+                -webkit-background-clip: text;
+            }
+            .define{
+                height: auto;
+                width: 90%;
+                background-color: rgb(248, 216, 216); 
+                border-radius: 20px;
+                padding: 25px; 
+                margin:0px 40px;
+                border: white;
+                border-left: 5px solid #1b051f;
+                border-right: 5px solid #240829;
+            }
+            pre,p{
+                font-size: 30;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            table{
+                margin: auto;
+                
+            }
+            span{
+                color: blue;
+            }
+            button{
+                background-color: rgb(172, 239, 248);
+                height: 30px;
+                border-radius: 15px;
+            }
+            .summary-table td, .summary-table th {
+            background-color: #f9f9f9;
+            font-weight: normal;
+            }
+           .note {
+              background: #ffffcc;
+              border-left: 5px solid #ffeb3b;
+              padding: 10px;
+              margin: 10px 0;
+            }
+            thead {
+              background-color: #333;
+              color: white;
+            }
+           tfoot {
+              background-color: #eee;
+              font-weight: bold;
+            }
+            th, td {
+              border: 1px solid #302e2e;
+              padding: 10px;
+              text-align: left;
+            }
+             
+        </style>
+    </head>
+    <body>
+        <h1 style="font-size: XXX-large;"> HTML Table</h1>
+        <div class="define">
+            <h2>1] HTML Table Basic</h2>
+            <pre>
+        ● An HTML table is used to organize and <span>display data in rows and columns</span>, similar to a spreadsheet.<br>
+        ● HTML tables are created using the &lt;table&gt; element.<br>
+        ● A table is structured using:<br>
+            1]<span>&lt;tr&gt; </span>- Table row<br>
+            2]<span>&lt;th&gt; </span>- Table Header Cell (bold & centered by default)<br>
+            3]<span>&lt;td&gt;</span> - Table Data Cell (normal text, left-aligned)</pre>    
+            <div style="height: auto;margin-left:0px;background-color: rgb(248, 189, 229);border-radius:19px;padding: 10px;border-left: 5px solid #9c27b0;">
+            <br>
+            <h4>Syntax:</h4><pre><code>
+            &lt;table&gt;
+                &lt;tr&gt;
+                   <b>&lt;th&gt;table header&lt;/th&gt;</b>
+                   <b>&lt;td&gt;table data&lt;/td&gt;</b>
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            </code>
+            </pre><br>
+            </div><hr>
+        <h2>2] Table Row &lt;tr&gt;</h2>
+        <pre>
+        ● Each row is defined using the <span>&lt;tr&gt; tag</span>.<br>
+        ● Contains <span>&lt;th&gt; or &lt;td&gt; elements</span>.
+        </pre>
+        <h4>Example:</h4>
+        <pre><code>    
+    &lt;tr&gt;
+        &lt;td&gt; Name &lt;/td&gt;
+        &lt;td&gt; class &lt;/td&gt;
+    &lt;/tr&gt;
+        </code></pre>
+        <div style="height: auto;margin-left:0px;background-color: rgb(248, 189, 229);border-radius:19px;padding: 10px;border-left: 5px solid #9c27b0;">
+         <br>
+        <h4>Output:</h4>
+        <table border="2" style="width: 50%;">
+            <tr>
+                <td>Name</td>
+                <td>class</td>
+            </tr>
+        </table><br></div><hr>
+        <h2>3] Table Header &lt;th&gt;</h2>
+        <pre>
+        ● Used to define header cells.<br>
+        ● <span>Bold and centered by default</span>.<br>
+        </pre>
+        <h4>Example:</h4>
+        <pre><code>    
+    &lt;tr&gt;
+        &lt;th&gt; Name &lt;/th&gt;
+        &lt;th&gt; class &lt;/th&gt;
+        &lt;th&gt; Marks &lt;/th&gt;
+    &lt;/tr&gt;
+        </code></pre>
+        <div style="height: auto;margin-left:0px;background-color: rgb(248, 189, 229);border-radius:19px;padding: 10px;border-left: 5px solid #9c27b0;">
+        <br>
+        <h4>Output:</h4>
+         <table border="2" style="width: 50%;">
+            <tr>
+                <th>Name</th>
+                <th>class</th>
+                <th>Marks</th>
+            </tr>
+        </table><br></div><hr>
+    <h2>4] Table Data Cell</h2>
+    <pre>
+    ● Defines regular <span>data cells inside rows</span>.<br>
+    ● Not bold, left-aligned by default
+    </pre>
+    <h4>Example:</h4>
+        <pre><code>    
+    &lt;tr&gt;
+        &lt;th&gt; Name &lt;/th&gt;
+        &lt;th&gt; class &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt; Nisha &lt;/td&gt;    
+        &lt;td&gt; java &lt;/td&gt;
+    &lt;/tr&gt;
+        </code></pre>
+        <div style="height: auto;margin-left:0px;background-color: rgb(248, 189, 229);border-radius:19px;padding: 10px;border-left: 5px solid #9c27b0;">
+        <br>
+        <h4>Output:</h4>
+         <table border="2" style="width: 50%;" >
+            <tr>
+                <th>Name</th>
+                <th>class</th>
+            </tr>
+            <tr>
+                <td>Nisha</td>
+                <td>Java</td>
+            </tr>
+        </table><br></div><hr>
+        <h2>5] Border in HTML Page</h2>
+        <p>
+           1] HTML tables <mark> do not have borders</mark> by default:
+        <button>
+                <a href="Border-Default.html">KNOW MORE</a>
+            </button>
+        <br><br>
+          2] Add borders using CSS:
+        <button>
+                <a href="withborder.html">KNOW MORE</a>
+        </button>
+        </p><hr>
+        <h2>6] Collapsed Borders:</h2>
+        <p>● Use <code><mark>border-collapse: collapse;</mark></code> to collapse borders:</p>
+        <h4>Syntax:</h4>
+        <pre><code>
+        &lt;style&gt;
+            table, th, td 
+            {
+                border: 1px solid black;
+                <b>border-collapse: collapse;</b>
+            }
+        &lt;/style&gt;</code></pre>
+        <button>
+                <a href="CollapsedBorders.html">KNOW MORE</a>
+        </button>
+        <hr>
+        <h2>7] Cell Spacing </h2>
+        <p>● to <span>Generate a space inside</span> a cell.</p>
+        <h4>syntax: </h4>
+        <pre><code>
+        &lt;table cellspacing="5" &gt;
+        </code> </pre>
+        <button>
+            <a href="cellspacing.html">KNOW MORE</a>
+        </button><hr>
+        <h2>8] Cell Padding </h2>
+        <p>● space inside a cell.</p>
+        <h4>syntax: </h4>
+        <pre><code>
+        &lt;table cellpadding="7" &gt;
+        </code> </pre>
+        <button>
+            <a href="cellpadding.html">KNOW MORE</a>
+        </button><hr>
+        <h2>9] Tr Hover</h2>
+        <p>● The <mark>tr:hover </mark> selector in CSS is used to define the <span>style of a table row</span> (&lt;tr&gt;) when the user hovers over it with the mouse pointer.</p><br>
+        <h4>Syntax:</h4>
+        <pre>
+            <code>
+            tr:hover{
+                background-color:#f2f2f2;
+            }
+            </code></pre>
+        <button>
+            <a href="tr_hover.html">KNOW MORE</a>
+        </button><hr>
+        <h2>10] Align Header Content:</h2>
+        <p>● The text-align property is used to set the horizontal alignment of a text.<br>
+           ● A text can be centered, left or right aligned.</p><br>
+        <h4>Syntax:</h4>
+        <pre><code>
+            &lt;style&gt;
+                th{
+                    text-align: center;
+                }
+                th{
+                    text-align: left;
+                }
+                th{
+                    text-align: right;
+                }
+            &lt;/style&gt;
+        </code></pre>
+        <button>
+            <a href="text-align.html">KNOW MORE</a>
+        </button><hr>
+        <h2>11]Table Border Spacing:</h2>
+        <p>● Border-spacing controls the space between table cells (i.e., between &lt;td&gt; and &lt;th&gt; elements). It's particularly useful when designing non-collapsed border tables.</p>
+        <h4>syntax:</h4>
+        <pre><code>
+        table {
+            border-spacing: 10px; /* adds 10px space between cells */
+        }
+        </code></pre>
+        <button>
+            <a href="Border_spacing.html">KNOW MORE</a>
+        </button><hr>
+        <h2>12] Colspan:</h2>
+        <p>● Used to <mark>merge multiple columns into a single cell</mark> horizontally.</p>
+        <h4>Syntax:</h4>
+        <pre><code>
+        &lt;th colspan="number"&gt;Content&lt;/th&gt;
+        </code></pre>
+        <button>
+            <a href="Colspan.html">KNOW MORE</a>
+        </button><hr>
+        <h2>13] Rowspan:</h2>
+        <p>● Used to <mark>merge multiple Row into a single cell</mark> vertically.</p>
+        <h4>Syntax:</h4>
+        <pre><code>
+        &lt;td rowspan="number"&gt;Content&lt;/td&gt;
+        </code></pre>
+        <button>
+            <a href="Rowspan.html">KNOW MORE</a>
+        </button><hr>
+        <h2>14] Colspan-Rowspan:</h2>
+        <p>● In HTML, the colspan and rowspan attributes are used within table &lt;td&gt; (table data) and &lt;th&gt; (table header) tags to<span> merge cells horizontally and vertically</span>, respectively. This allows for more complex table layouts and the ability to represent data that spans multiple rows or columns. </p>
+        <h4>Syntax:</h4>
+        <pre><code>
+            &lt;td colspan="2"&gt;merged column &lt;td&gt;
+            &lt;td rowspan="2"&gt;Merged row &lt;td&gt;
+        </code></pre>
+        <button>
+            <a href="colspan-rowspan.html">KNOW MORE</a>
+        </button><hr>
+        <h2>15] Zebra Stripes</h2>
+        <p>● <span>Creating a zebra-striped table</span> with CSS makes your table easier to read by adding alternating background colors to the rows. This design helps to visually separate the rows, making it simpler for users to follow the data.</p>
+        <p>These are the following methods to create a zebra-stripped table with CSS:</p>
+        <div style="height: auto;margin-left:0px;background-color: rgb(248, 189, 229);border-radius:19px;padding: 10px;border-left: 5px solid #9c27b0;">
+            <h4>Table of Content</h4>
+            <p>● <a href="Zebrastripes-row.html">Table with zebra-stripped rows</a></p>
+            <p>● <a href="Zebrastripes-col.html">Table with zebra-stripped column</a></p>
+        </div>
+        <hr>
+        <h2>16] Responsive Table</h2>
+        <p>● Tables with many columns can overflow the screen on mobile devices, causing layout issues or hidden content.</p>
+        <h4>Syntax: </h4>
+        <p>Wrap the <code>&lt;table&gt;</code> inside a <code>&lt;div&gt;</code> with <code>overflow-x: auto;</code> like this:</p>
+        <pre><code>
+    &lt;div style="overflow-x:auto;"&gt;
+        &lt;table&gt;
+            &lt;!-- table content --&gt;
+        &lt;/table&gt;
+     &lt;/div&gt;</code></pre>
+     <button>
+            <a href="Responsive Tables.html">KNOW MORE</a>
+        </button><hr>
+        
+    <h2>📌 BONUS: Extra Table Elements in HTML</h2>
+    <p>These tags enhance structure, accessibility, and styling for large or complex tables.</p>
+
+    <h3>✅ 1. &lt;thead&gt; — Table Header Section</h3>
+    <p><strong>🔹 Purpose:</strong> Groups header row(s) for better structure and accessibility.</p>
+    <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+&lt;/table&gt;</code></pre><hr>
+
+    <h3>✅ 2. &lt;tbody&gt; — Table Body Section</h3>
+    <p><strong>🔹 Purpose:</strong> Wraps the main content rows.</p>
+    <pre><code>&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;John&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre><hr>
+
+    <h3>✅ 3. &lt;tfoot&gt; — Table Footer Section</h3>
+    <p><strong>🔹 Purpose:</strong> Defines footer row(s) for totals or notes.</p>
+    <pre><code>&lt;table&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;&lt;td&gt;Total&lt;/td&gt;&lt;td&gt;2 Employees&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre><hr>
+
+    <h3>✅ 4. &lt;colgroup&gt; — Group Columns</h3>
+    <p><strong>🔹 Purpose:</strong> Group columns and apply shared styles.</p>
+    <pre><code>&lt;colgroup&gt;
+  &lt;col span="1" style="background:#f2f2f2"&gt;
+  &lt;col span="1" style="background:#fff"&gt;
+&lt;/colgroup&gt;</code></pre><hr>
+
+    <h3>✅ 5. &lt;col&gt; — Style Individual Columns</h3>
+    <p><strong>🔹 Purpose:</strong> Works within <code>&lt;colgroup&gt;</code> to target specific columns.</p><hr>
+
+    <h3>✅ Combined Semantic Table Example</h3>
+    <table style="width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;">
+      <colgroup>
+        <col style="background-color: #f9f9f9">
+        <col>
+      </colgroup>
+
+      <thead>
+        <tr><th>Employee</th><th>Department</th></tr>
+      </thead>
+
+      <tbody>
+        <tr><td>John</td><td>HR</td></tr>
+        <tr><td>Emma</td><td>Finance</td></tr>
+      </tbody>
+
+      <tfoot>
+        <tr><td colspan="2">Total Employees: 2</td></tr>
+      </tfoot>
+    </table><hr>
+
+    <h3>📋 Summary Table</h3>
+    <table class="summary-table" style="width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;">
+      <tr><th>Element</th><th>Description</th><th>Use Case</th></tr>
+      <tr><td><code>&lt;thead&gt;</code></td><td>Groups header rows</td><td>Styling, accessibility</td></tr>
+      <tr><td><code>&lt;tbody&gt;</code></td><td>Wraps data rows</td><td>Main content section</td></tr>
+      <tr><td><code>&lt;tfoot&gt;</code></td><td>Footer for totals</td><td>Summary, calculations</td></tr>
+      <tr><td><code>&lt;colgroup&gt;</code></td><td>Groups columns</td><td>Styling columns</td></tr>
+      <tr><td><code>&lt;col&gt;</code></td><td>Targets columns</td><td>Set width, color</td></tr>
+    </table>
+
+    <div class="note">
+      ✅ Use these semantic tags when building large tables, applying styles, or improving accessibility.
+    </div>
+  </div>
+
+
+
+
+        </div>
+
+    </body
+</html>

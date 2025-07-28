@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>cellspacing</title>
+    <style>
+         body{
+                background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+                
+                margin: auto;
+                padding: 5px;
+            } 
+            div{
+                height: auto;
+                width: 90%;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 25px; 
+                margin:0px 45px;
+                border: white;
+                border-left: 5px solid #1b051f;
+                border-right: 5px solid #240829;
+            }
+            p{
+                font-weight: bold;
+
+            }
+            table, th, td 
+            {
+                border: 1px solid black;
+            
+            }
+            table{
+                border-spacing: 10px;
+            }
+            button{
+                background-color: rgb(172, 239, 248);
+                height: 30px;
+                border-radius: 15px;
+            }
+    </style>
+    </head>
+    <body>
+        <div>
+            <h1>Border Spacing</h1>
+            <p>● The default value for<mark> border-collapse is separate</mark>, which allows border-spacing to apply.</p>
+           <h4>Example:</h4>
+            <pre><code>
+            &lt;style&gt;
+                table{
+                    <b>border-spacing: 10px;</b>
+                }
+            &lt;/style&gt;</code></pre>
+            <div style="height: auto;margin-left:0px;background-color: rgb(248, 189, 229);border-radius:19px;padding: 10px;border-left: 5px solid #9c27b0;">
+            <h4>Output:</h4>
+            <table  style="width: 60%;margin: auto;">
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>Ishita</td>
+                <td>22</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Prasad</td>
+                <td>19</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Kalyani</td>
+                <td>32</td>
+                <td>Female</td>
+            </tr>
+        </table><br>
+        </div>
+        <hr>
+        <p>
+            <button>
+                <a href="index.html">Back to Main Page</a>
+            </button>
+        </p>
+        </div>
+    </body>
+    </html>

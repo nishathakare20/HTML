@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zebra Stripes row</title>
+        <style>
+            body{
+                background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+                
+                margin: auto;
+                padding: 5px;
+            } 
+            div{
+                height: auto;
+                width: 90%;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 25px; 
+                margin:0px 45px;
+                border: white;
+                border-left: 5px solid #1b051f;
+                border-right: 5px solid #240829;
+            }
+            p{
+                font-weight: bold;
+
+            }
+            h2{
+                text-align: center;
+                color: rgb(10, 7, 63);
+            }
+            table{
+            width: 95%;
+            border-spacing: 5px;
+            margin: auto;
+            border: 2px solid black;
+            }
+            th{
+            border: 0px solid green;
+            }
+             tr:nth-child(even){
+                background-color: rgba(219, 250, 133, 0.336);
+            }
+            tr:nth-child(odd){
+                background-color: rgba(137, 114, 250, 0.336);
+            }
+            button{
+                background-color: rgb(172, 239, 248);
+                height: 30px;
+                border-radius: 15px;
+            }
+            th,td{
+                border: 2px solid black;
+            }
+
+        </style>
+    </head>
+    <body>
+         <div>
+            <h2>Zebra Stripes with ROW</h2>
+            <h4>3] Table with zebra-stripped Even and Odd rows:</h4>
+            <p>● To achieve a combined zebra stripe effect in an HTML table, where both rows and columns alternate colors, you can use the<mark> :nth-child(odd) and :nth-child(even) </mark>pseudo-classes in CSS.</p>
+            <pre><code>
+            tr:nth-child(<mark>even</mark>)
+                {
+                    background-color:  rgba(219, 250, 133, 0.336);
+                }
+            tr:nth-child(<mark>odd</mark>)
+                {
+                    background-color: rgba(194, 183, 247, 0.336);
+                }</code></pre>
+            <h4>Output:</h4>
+            <table>
+                <tr>
+                    <th>Emp_name</th>
+                    <th>Emp_id</th>
+                    <th>Destination</th>
+                    <th>Department</th>
+                    <th>contant No</th>
+                    <th>Email_id</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <td>Shashi</td>
+                    <td>401</td>
+                    <td>Software Eng</td>
+                    <td>IT</td>
+                    <td>9876543218</td>
+                    <td>shashi@.com</td>
+                    <td>pune</td>
+                </tr>
+                <tr>
+                    <td>Nikita</td>
+                    <td>402</td>
+                    <td>Jr.Developer</td>
+                    <td>IT</td>
+                    <td>9876543219</td>
+                    <td>nikita@.com</td>
+                    <td>pune</td>
+                </tr>
+                <tr>
+                    <td>prasad</td>
+                    <td>403</td>
+                    <td>Executive</td>
+                    <td>Marketing</td>
+                    <td>9876543217</td>
+                    <td>prasad@.com</td>
+                    <td>Nashik</td>
+                </tr>
+                <tr>
+                    <td>vishal</td>
+                    <td>404</td>
+                    <td>manager</td>
+                    <td>service</td>
+                    <td>9876543216</td>
+                    <td>vishal@.com</td>
+                    <td>Nager</td>
+                </tr>
+                <tr>
+                    <td>kalyani</td>
+                    <td>405</td>
+                    <td>assistant</td>
+                    <td>service</td>
+                    <td>8765433217</td>
+                    <td>kalyani@.com</td>
+                    <td>Nagpur</td>
+                </tr>
+                <tr>
+                    <td>sakshi</td>
+                    <td>406</td>
+                    <td>web Developer</td>
+                    <td>IT</td>
+                    <td>9876543216</td>
+                    <td>shakshi@.com</td>
+                    <td>Shivajinager</td>
+                </tr>
+                <tr>
+                    <td>omkar</td>
+                    <td>407</td>
+                    <td>technical writer</td>
+                    <td>IT</td>
+                    <td>9876543219</td>
+                    <td>omkar@.com</td>
+                    <td>mumbai</td>
+                </tr>
+            </table><hr>
+            <button>
+                <a href="Zebrastripes-row.html">Back page</a>
+            </button>
+            
+        </div>
+    </body>
+</html>

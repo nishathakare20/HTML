@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internal CSS</title>
+        <style>
+            body{
+                background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                margin: auto;
+                padding: 5px;
+            }
+            div{
+                margin-left: 80px;
+                margin-right: 80px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: rgb(241, 137, 158);
+                border: 2px rgb(241, 137, 158);
+                padding: 10px;
+                height: 1040px; 
+                border-radius: 2%;
+                
+            }
+            h1 {
+                
+                text-align: center;
+                background: linear-gradient(to left, rgb(162, 101, 241),rgb(20, 33, 68),rgb(110, 3, 233));
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+            pre,li{
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                margin: 3px auto;
+            }
+            span{
+                color: blue;
+            }
+            table{
+                width: 60%;
+                margin: 10px auto;
+            }
+            
+            img{
+                height: 60px;
+                width: 60px;
+            }
+            .ab1{
+                width: 98%;
+                height: 150px;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 7px; 
+                margin:0px 7px;
+                border: white;
+            }
+            .ab2{
+                width: 98%;
+                height: 305px;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 5px; 
+                margin:0px 7px;
+                border: white;
+
+            }
+            .ab3{
+                width: 98%;
+                height: 150px;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 5px; 
+                margin:0px 7px;
+                border: white;
+
+            }
+            .ab4{
+                width: 98%;
+                height: 150px;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 5px; 
+                margin:0px 7px;
+                border: white;
+
+            }
+            h3{
+                padding-left: 15px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div>
+        <h1>INTERNAL CSS</h1>
+        <div class="ab1">
+        <h3>Definition: An internal CSS is used to defined style for a single HTML pages.this CSS is define in the <span>&lt;head&gt; </span>section of an html pages .
+        For Internal CSS , We Use <span>&lt;style&gt;</span> Element In<span> &lt;head&gt;</span> Section.</h3>
+        <h3><span>Selector :</span> It is a pattern of elements and other terms that tell the browser which HTML elements should be selected
+             to have the <span>CSS property values inside the rule</span> applied to them. </h3>
+         </div><br>
+        
+        <div class="ab2">
+        <h3>Syntax:</h3>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                    &lt;style&gt;
+                        h1 {
+                            color: green;
+                            font-family: Arial;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    l&lt;h1&gt; Hello from Internal CSS&lt;/h1&gt;
+                &lt;/body&gt;
+            &lt;html&gt;
+        </pre>
+        </div><br>
+        <div class="ab3">
+        <h3>Advantages Of Internal CSS :</h3>
+        <ul><li><span> Localized Styling:</span>Keep styles within the html file,avoiding confilicts with other pages and making it easier to manage style at the local level.</li>
+            <li><span>Higher Specificity:</span>Internal CSS has higher specificity than external CSS ,allowing easier overriding of external styles within the same HTML file.</li>
+            <li><span>Performance:</span>Reduces HTTP request ,potentially enhancing performance as no additional CSS files need to be loaded.</li>
+            <li><span>Ease of Implementation:</span>Simple to use and implement ,making it easy to quickly apply style to a single page.</li>
+        </ul>
+        </div><br>
+        <div class="ab4">
+        <h3> Disadvantages of Internal CSS:</h3><ul>
+        <li><span>Repetition:</span>Styles must be repeated in multiple HTML files if the same styles are needed across differnt pages.</li>
+        <li><span>Increased file Size:</span>Embedding CSS in HTML Increases the file size of the HTML document.</li>
+        <li><span>Reduced Reusability:</span>Limited code reusability code reusability across diferrent web pages.</li>
+        <li><span>Limited Management:</span>Managing style across multiple pages can become difficult without a centralized stylesheet.</li>
+        </ul>
+        </div><br>
+        <!--
+        <table>
+            <tr>
+                <th>
+                    <a href="inline.html">
+                        <img src="previous.png" alt="Previous Icon" title="Visit : INLINE CSS Page">
+                    </a>
+                </th>
+                <th>
+                    <a href="index.html">
+                        <img src="home.png" alt="Home Icon" title="Visit : Index CSS page">
+                    </a>
+                </th>
+                <th>
+                    
+                </th>
+            </tr>
+        </table>
+        -->
+         </div>
+    </body>
+</html>

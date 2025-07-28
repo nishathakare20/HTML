@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>InternalCSS</title>
+        <style>
+            body{
+                font-family: verdana;
+                font-size: 15;
+                margin: 5px;
+                border: 2px black outset;
+                padding: 5px 20px;
+                background: linear-gradient(to right, rgb(2, 27, 2), hsl(64, 84%, 58%));
+                color: white;
+            }
+            h1{
+                text-align: center;
+                color: red;
+            }
+            h3{
+                color: maroon;
+            }
+            pre{font-weight: bold;}
+            h6{
+                margin: 1px 50px;
+            }
+            table,th{border: 2px outset lightcoral;}
+            td{border: lightslategray 2px inset;}
+        </style>
+    </head>
+    <body>
+        <h1>Internal CSS</h1>
+        <hr>
+        <h3>Purpose : </h3>
+        <pre>
+            1. <b>Define</b> : An internal CSS is used to defined style for a single HTML pages.
+                               this CSS is define in the &lt;head&gt; section of an html pages .
+            2. For Internal CSS , We Use &lt;style&gt; Element In &lt;head&gt; Section.
+            3. <b>Selector : </b>It is a pattern of elements and other terms that tell the browser which HTML elements should be selected
+                                   to have the CSS property values inside the rule applied to them.
+            4. <b>Advantages Of Internal CSS :</b>
+                    i]<b> Localized Styling:</b>Keep styles within the html file,avoiding confilicts with other pages
+                         and making it easier to manage style at the local level.
+                    ii] <b>Higher Specificity:</b>Internal CSS has higher specificity than external CSS ,
+                         allowing easier overriding of external styles within the same HTML file.
+                    iii]<b>Performance:</b>Reduces HTTP request ,potentially enhancing performance as no additional CSS files need to be loaded.
+                    iv]<b>Ease of Implementation:Simple to use and implement ,making it easy to quickly apply style to a single page.</b>
+                
+            5.<b> Disadvantages of Internal CSS:</b>
+                    i]<b>Repetition:</b>Styles must be repeated in multiple HTML files if the same styles are needed across differnt pages.
+                    ii]<b>Increased file Size:</b>Embedding CSS in HTML Increases the file size of the HTML document.
+                    iii]<b>Reduced Reusability:</b>Limited code reusability code reusability across diferrent web pages.
+                    iv]<b>Limited Management:</b>Managing style across multiple pages can become difficult without a centralized stylesheet.
+            6.
+        </pre><hr>
+        <h3>Example : </h3>
+        <div>
+            <h6>HTML
+            </h6>
+            <h6>CSS</h6>
+            <h6>JAVA</h6><hr>
+            <h3 style="text-align: center;">Difference between Inline ,Internal,External CSS</h3>
+            <table>
+                <tr>
+                    <th>SR.NO</th>
+                    <th>Parameter</th>
+                    <th>Inline CSS</th>
+                    <th>Internal CSS</th>
+                    <th>External CSS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Location</td>
+                    <td>It is used within html tag using the style attribute.</td>
+                    <td>It is used within &lt;head&gt; section of html document.</td>
+                    <td>It is used in a separate css file.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Selector Scope</td>
+                    <td>Affect a single elements or group of element.</td>
+                    <td>Affect multiple element within the same HTML element.</td>
+                    <td>Affect multiple html document or an entire website.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Section</td>
+                    <td> body</td>
+                    <td>head</td>
+                    <td>head</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Define</td>
+                    <td>style attribute</td>
+                    <td>style element</td>
+                    <td>stylesheet or file </td>
+                </tr>
+            </table>
+        </div><hr>
+
+        <br><br><br>
+    </body>
+</html>

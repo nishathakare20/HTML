@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebra Stripes</title>
+    <style>
+        body{
+                background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+                font-size: 18;
+                font-family: Arial, Helvetica, sans-serif;
+                
+                margin: auto;
+                padding: 5px;
+            } 
+            div{
+                height: auto;
+                width: 90%;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 25px; 
+                margin:0px 45px;
+                border: white;
+                border-left: 5px solid #1b051f;
+                border-right: 5px solid #240829;
+            }
+            p{
+                font-weight: bold;
+
+            }
+            h2{
+                text-align: center;
+                color: rgb(10, 7, 63);
+            }
+        table{
+            width: 95%;
+            border-spacing: 5px;
+            margin: auto;
+        }
+        th{
+            border: 0px solid green;
+        }
+        th:nth-child(even){
+            background-color: rgba(172, 220, 223, 0.616);
+        }
+        button{
+                background-color: rgb(172, 239, 248);
+                height: 30px;
+                border-radius: 15px;
+            }
+    </style>
+</head>
+<body>
+    <div>
+    <h2>Zebra Stripes</h2>
+    <h4>2]Table with zebra-stripped (even) column:</h4>
+    <p>● To create a table with "zebra stripes" in even columns using CSS, you can apply a background color to the even-indexed &lt;th&gt; (table header) elements within each row. </p>
+    <pre>        
+        th:nth-child(<mark>even</mark>)
+        {
+            background-color: rgba(172, 220, 223, 0.616);
+        }</pre>
+    <hr>
+
+    <table>
+        <tr>
+                    <th>Emp_name</th>
+                    <th>Emp_id</th>
+                    <th>Destination</th>
+                    <th>Department</th>
+                    <th>contant No</th>
+                    <th>Email_id</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <th>Shashi</th>
+                    <th>401</th>
+                    <th>Software Eng</th>
+                    <th>IT</th>
+                    <th>9876543218</th>
+                    <th>shashi@.com</th>
+                    <th>pune</th>
+                </tr>
+                <tr>
+                    <th>Nikita</th>
+                    <th>402</th>
+                    <th>Jr.Developer</th>
+                    <th>IT</th>
+                    <th>9876543219</th>
+                    <th>nikita@.com</th>
+                    <th>pune</th>
+                </tr>
+                <tr>
+                    <th>prasad</th>
+                    <th>403</th>
+                    <th>Executive</th>
+                    <th>Marketing</th>
+                    <th>9876543217</th>
+                    <th>prasad@.com</th>
+                    <th>Nashik</th>
+                </tr>
+                <tr>
+                    <th>vishal</th>
+                    <th>404</th>
+                    <th>manager</th>
+                    <th>service</th>
+                    <th>9876543216</th>
+                    <th>vishal@.com</th>
+                    <th>Nager</th>
+                </tr>
+                <tr>
+                    <th>kalyani</th>
+                    <th>405</th>
+                    <th>assistant</th>
+                    <th>service</th>
+                    <th>8765433217</th>
+                    <th>kalyani@.com</th>
+                    <th>Nagpur</th>
+                </tr>
+                <tr>
+                    <th>sakshi</th>
+                    <th>406</th>
+                    <th>web Developer</th>
+                    <th>IT</th>
+                    <th>9876543216</th>
+                    <th>shakshi@.com</th>
+                    <th>Shivajinager</th>
+                </tr>
+                <tr>
+                    <th>omkar</th>
+                    <th>407</th>
+                    <th>technical writer</th>
+                    <th>IT</th>
+                    <th>9876543219</th>
+                    <th>omkar@.com</th>
+                    <th>mumbai</th>
+                </tr>
+    </table>
+    <button>
+                <a href="Zebrastripes-col.html">Back to page</a>
+    </button>
+    </div>
+</body>
+</html>

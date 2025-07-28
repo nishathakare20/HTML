@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rowspan
+        </title>
+        <style>
+            body{
+                background: linear-gradient(to left, rgb(188, 240, 247),rgb(243, 242, 209));
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: auto;
+                padding: 5px;
+            } 
+            div{
+                height: auto;
+                width: 90%;
+                background-color: white; 
+                border-radius: 20px;
+                padding: 25px; 
+                margin:0px 45px;
+                border: white;
+                border-left: 5px solid #1b051f;
+                border-right: 5px solid #240829;
+            }
+            p{
+                font-weight: bold;
+            }
+            table, th, td 
+            {
+                border: 1px solid black;
+                width: 50%;
+                margin: auto;
+            }
+            h1{
+                text-align: center;
+            }
+            span{
+                color: blue;
+            }
+            button{
+                background-color: rgb(172, 239, 248);
+                height: 30px;
+                border-radius: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>HTML Table - rowspan Attribute</h1><hr>
+            <h3>Purpose:</h3>
+            <p>The <span>rowspan</span> attributes in HTML is used in table headers (&lt;th&gt;) or data cells (&lt;td&gt;) to make a cell span across multiple rows. It merges cells vertically in a column.</p>
+            <h3>Syntax:</h3>
+            <pre><code>
+            &lt;td rowspan= "number"&gt;Cell Content&lt;/td&gt;
+            </code></pre>
+            <div style="height: auto;margin-left:0px;background-color: rgb(248, 189, 229);border-radius:19px;padding: 10px;border-left: 5px solid #9c27b0;">
+            <h3>Example:</h3>
+            <table>
+                <caption>
+                    This table demonstrates how <span>rowspan="2"</span>merges the first two rows in the first column:
+                </caption>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>math</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Nisha</td>
+                    <td>science</td>
+                    <td>89</td>
+                </tr>
+            </table>
+            </div><hr>
+            <h3>Output Preview:</h3>
+            <p>In the first column, the cell with "Name" spans 2 rows vertically.</p><br>
+            <div style="height: auto;width: 90%;background-color: rgb(234, 248, 172);border-radius: 20px;margin: 20px;border-left: 5px solid #9c27b0;">
+            <h3>Notes:</h3>
+            <p>● <span>rowspan</span> is used to vartically merge table cells across rows.</p>
+            <p>● The number must indicate how many rows you want the cell to span.</p>
+            <p>● It's especially useful in report-style tables, attendance sheets, scorecards, etc.</p>
+            <p>● You can combine <span>rowspan</span> with <span>colspan</span> for advanced table layout.</p>
+
+            </div>
+            <p>
+            <button>
+                <a href="index.html">Back to Main Page</a>
+            </button>
+        </p>
+          
+
+        </div>
+    </body>
+</html>
